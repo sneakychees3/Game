@@ -43,6 +43,7 @@ public class movement : MonoBehaviour
         {
            jumpPressedRemember=jumpPressedRememberTime;
         }
+        groundedRemember-=Time.deltaTime;
         if(groundedRemember<0)
         {
             groundedRemember=0;
@@ -56,6 +57,7 @@ public class movement : MonoBehaviour
         move(direction.x);
         if((jumpPressedRemember>0)&&groundedRemember>0)
         {
+            groundedRemember=0;
             jumpPressedRemember=0;
             Jump();
         }
