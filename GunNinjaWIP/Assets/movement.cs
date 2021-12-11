@@ -18,13 +18,12 @@ public class movement : MonoBehaviour
     [SerializeField] float fall_multiplier=4;//smaller means higher jump height need to play with this
     //jump stuff
     [SerializeField]bool isGrounded=false;
-    [SerializeField]float groundDist=0.39f;//to check for ground collision
     [SerializeField] float jumpForce=15f;//force applied to jump
     [SerializeField] float jumpPressedRememberTime=0.2f;
     private float jumpPressedRemember=0;
     [SerializeField] float groundedRememberTime=.2f;
     private float groundedRemember=0;
-    //test code here see if it works
+
     void Start()
     {
         rb=this.GetComponent<Rigidbody2D>();
@@ -36,11 +35,18 @@ public class movement : MonoBehaviour
         //need to check if player is touching ground each frame
         isGrounded=Physics2D.BoxCast(this.bc.bounds.center,bc.bounds.size,0f,Vector2.down,.4f,groundLayer);
         jumpPressedRemember-=Time.deltaTime;
+        if(jumpPressedRemember<0)
+        {
+            jumpPressedRemember=0;
+        }
         if(Input.GetButtonDown("Jump"))
         {
            jumpPressedRemember=jumpPressedRememberTime;
         }
-        groundedRemember-=Time.deltaTime;
+        if(groundedRemember<0)
+        {
+            groundedRemember=0;
+        }
         if(isGrounded)
         {
             groundedRemember=groundedRememberTime;
