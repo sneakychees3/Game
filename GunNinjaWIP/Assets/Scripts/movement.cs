@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class movement : MonoBehaviour
 {
     //components
@@ -29,9 +30,10 @@ public class movement : MonoBehaviour
         rb=this.GetComponent<Rigidbody2D>();
         bc=this.GetComponent<BoxCollider2D>();
     }
+    
     void Update()
     {
-        direction=new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));//get which keys player is pressing
+        direction=new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
         //need to check if player is touching ground each frame
         isGrounded=Physics2D.BoxCast(this.bc.bounds.center,bc.bounds.size,0f,Vector2.down,.4f,groundLayer);
         jumpPressedRemember-=Time.deltaTime;
