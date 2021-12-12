@@ -47,7 +47,7 @@ public class betterPlayerMovement : MonoBehaviour
             lastJumpPressed-=Time.deltaTime;
         }
         if(Input.GetButtonDown("Jump")){
-            lastJumpPressed=lastGroundedTime;
+            lastJumpPressed=lastJumpPressedTime;
         }
         if(lastGrounded<0){
             lastGrounded=0;
