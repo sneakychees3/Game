@@ -354,7 +354,6 @@ GameObject:
   - component: {fileID: 337924785}
   - component: {fileID: 337924784}
   - component: {fileID: 337924788}
-  - component: {fileID: 337924789}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -481,7 +480,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337924783}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd4e5a590522fd2459891c1a65248de6, type: 3}
   m_Name: 
@@ -498,35 +497,6 @@ MonoBehaviour:
   jumpForce: 15
   jumpPressedRememberTime: 0.1
   groundedRememberTime: 0.1
---- !u!114 &337924789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337924783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afaae7964e1a4d42ae78dd41cac5e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 30
-  acc: 4
-  decc: 2
-  airAcc: 1
-  airDecel: 1
-  accPower: 0.9
-  jumpForce: 17
-  jumpCutAmount: 0.5
-  fallMultiplier: 1.35
-  lastGroundedTime: 0.1
-  lastJumpPressedTime: 0.1
-  gravityScale: 1
-  isGrounded: 0
-  frictionAmount: 0.85
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &377240963
 GameObject:
   m_ObjectHideFlags: 0
