@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class movement : MonoBehaviour
+public class playerMovement : MonoBehaviour
 {
     //components
     Rigidbody2D rb;
