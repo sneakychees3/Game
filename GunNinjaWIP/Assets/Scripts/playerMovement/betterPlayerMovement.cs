@@ -65,7 +65,7 @@ public class betterPlayerMovement : MonoBehaviour{
         horizontalMove(direction.x);  
          if(lastGrounded>0&&lastJumpPressed>0&&!isJumping){
         jump(direction,false);
-    }else{onJumpUp();} 
+    }
          
          //faster fall
          if(rb.velocity.y<0){
