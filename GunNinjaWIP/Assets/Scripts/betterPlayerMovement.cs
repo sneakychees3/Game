@@ -32,6 +32,8 @@ public class betterPlayerMovement : MonoBehaviour
     [SerializeField]float frictionAmount=0;
     //other
     [SerializeField] LayerMask groundLayer;
+    [SerializeField] Transform feetPos;
+    [SerializeField] float checkRadius;
     void Start(){
         rb=this.GetComponent<Rigidbody2D>();
         bc=this.GetComponent<BoxCollider2D>();
@@ -39,7 +41,7 @@ public class betterPlayerMovement : MonoBehaviour
     void Update(){
         direction=new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
         
-        isGrounded=Physics2D.BoxCast(this.bc.bounds.center,bc.bounds.size,0f,Vector2.down,.4f,groundLayer);
+        isGrounded=Physics2D.OverlapCircle(feetPos.position,checkRadius,groundLayer);
         if(lastJumpPressed<0){
             lastJumpPressed=0;
         }
