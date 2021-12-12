@@ -23,6 +23,8 @@ public class betterPlayerMovement : MonoBehaviour
     [SerializeField] float gravityScale=1;
     [SerializeField]bool isGrounded;
     bool isJumping=false;
+    [SerializeField] float jumpTimeCounter=.1f;
+    float jumpTime;
     #endregion
     // components 
     Rigidbody2D rb;
@@ -103,6 +105,7 @@ public class betterPlayerMovement : MonoBehaviour
         lastJumpPressed=0f;
         rb.velocity=new Vector2(rb.velocity.x,0);
         rb.AddForce(Vector2.up*jumpForce,ForceMode2D.Impulse);
+        jumpTime=jumpTimeCounter;
         isJumping=true;
     }
     void onJumpUp(){
