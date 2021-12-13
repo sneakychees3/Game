@@ -353,9 +353,7 @@ GameObject:
   - component: {fileID: 337924786}
   - component: {fileID: 337924785}
   - component: {fileID: 337924784}
-  - component: {fileID: 337924790}
   - component: {fileID: 337924791}
-  - component: {fileID: 337924788}
   - component: {fileID: 337924789}
   - component: {fileID: 337924792}
   m_Layer: 0
@@ -477,20 +475,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &337924788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337924783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d230096d8a0f044984e600a0a115ebb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallMultiplier: 30
-  lowJumpMultiplier: 2
 --- !u!114 &337924789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,31 +577,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &337924790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337924783}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afaae7964e1a4d42ae78dd41cac5e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 12
-  acc: 8
-  decc: 14
-  airAcc: 1
-  airDecel: 1
-  accPower: 0.87
-  hFriction: 1.9
-  jumpForce: 10
-  jumpCutAmount: 0.5
-  gravityScale: 1
-  fallMultiplier: 2
-  lastGroundedTime: 0.1
-  lastJumpPressedTime: 0.1
 --- !u!114 &337924791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,15 +614,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  maxSpeed: 10
-  acc: 9
-  decc: 9
+  maxSpeed: 9
+  acc: 13
+  decc: 15
   airAcc: 1
   airDecel: 1
-  accPower: 1.2
-  horizontalFriction: 0.85
-  jumpForce: 12
-  jumpCutAmount: 0.5
+  accPower: 0.89
+  horizontalFriction: 0.95
+  jumpForce: 13
+  jumpCutAmount: 0.1
   gravityScale: 1
   fallMultiplier: 2
   lastGroundedTime: 0.1
