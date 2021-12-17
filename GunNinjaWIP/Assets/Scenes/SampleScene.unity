@@ -617,8 +617,8 @@ MonoBehaviour:
   maxSpeed: 9
   acc: 13
   decc: 15
-  airAcc: 1
-  airDecel: 1
+  airAcc: 10
+  airDecel: 10
   accPower: 0.89
   horizontalFriction: 0.95
   jumpForce: 13
