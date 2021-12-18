@@ -33,6 +33,7 @@ public class playerMovestate : playerGroundedState
     public override void Physics()
     {
         base.Physics();
-        player.movePlayerX(input.x);
+        player.movePlayerCalcs(input.x);
+        player.setVelocityX();
     }
 }

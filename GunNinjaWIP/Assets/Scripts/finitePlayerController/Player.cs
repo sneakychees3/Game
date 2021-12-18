@@ -16,7 +16,8 @@ public class Player : MonoBehaviour
 
     public playerInput handler{get;private set;}
     [SerializeField] private playerData pd;
-    private Vector2 currentVelocity;
+    private Vector2 currentVelocity{get;  set;}
+    private Vector2 temp1;
     private void Awake(){
         // when the player loads in all needed references will be loaded 
         stm=new StateMachine(); 
@@ -39,16 +40,21 @@ public class Player : MonoBehaviour
         currentVelocity=rb.velocity;
         
     }
-    public void movePlayerX(float x)
+    public void movePlayerCalcs(float x)
     {
         float targetSpeed=x*pd.maxSpeed;// calculate the max speed in desired direction
         float speedDiff=targetSpeed-currentVelocity.x;// difference between current speed and max speed
         float accRate=(Mathf.Abs(targetSpeed)>0.01f)?pd.acc:pd.decc; // get the rate needed to reach top speed 
         float moveAmount=Mathf.Pow(Mathf.Abs(speedDiff)*accRate,pd.accPower)*Mathf.Sign(speedDiff);//calculate the move speed
-        rb.AddForce(moveAmount*Vector2.right);
+        currentVelocity=new Vector2(Vector2.right.x*moveAmount,currentVelocity.y);
         //add friction
          float temp=Mathf.Min(Mathf.Abs(currentVelocity.x),Mathf.Abs(pd.horizontalFriction));
             temp*=Mathf.Sign(currentVelocity.x);
-            rb.AddForce(Vector2.right*-temp,ForceMode2D.Impulse);
+            currentVelocity=new Vector2(currentVelocity.x*-temp,currentVelocity.y);
+    }
+    public void setVelocityX(){
+        temp1.Set(currentVelocity.x,currentVelocity.y);
+        rb.velocity=temp1;
+        currentVelocity=temp1;
     }
 }
