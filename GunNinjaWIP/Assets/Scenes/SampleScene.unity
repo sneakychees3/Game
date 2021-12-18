@@ -613,20 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0356aa2ee78a3bd4bacf39567f0fdad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  maxSpeed: 9
-  acc: 13
-  decc: 15
-  airAcc: 10
-  airDecel: 10
-  accPower: 0.89
-  horizontalFriction: 0.95
-  jumpForce: 13
-  jumpCutAmount: 0.1
-  gravityScale: 1
-  fallMultiplier: 2
-  lastGroundedTime: 0.1
-  lastJumpPressedTime: 0.1
+  pd: {fileID: 11400000, guid: 57f6d16e535f7b84e8f60ad33d527055, type: 2}
 --- !u!1 &377240963
 GameObject:
   m_ObjectHideFlags: 0
