@@ -21,10 +21,12 @@ public class PlayerState
 
     public virtual void Enter(){ //call when enter a new state 
         doCheck();
+        //animator enter code here need to figure out how it works
         startTime=Time.time;
+        Debug.Log(aniBoolName);
     }
     public virtual void Exit(){//call when leave previous state 
-
+        //animator exit code here need to figure out how it works too
     }
     public virtual void Logic(){//will work as update
 
