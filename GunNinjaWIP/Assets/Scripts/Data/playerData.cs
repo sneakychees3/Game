@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class playerData : MonoBehaviour
 {
-    // Start is called before the first frame update
+   // all the data that can be referenced will be put here, movement force, speed etc.
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
