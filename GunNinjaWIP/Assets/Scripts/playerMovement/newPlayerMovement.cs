@@ -44,8 +44,7 @@ public class newPlayerMovement : MonoBehaviour
         }
         
     }
-    #endregion
-   
+    #endregion  
     #region  fixedUpdate
     void FixedUpdate(){
         applyMovement(direction.x);
@@ -63,14 +62,13 @@ public class newPlayerMovement : MonoBehaviour
         }
         resetBools();
     }
-    #endregion
-
+    #endregion 
     #region horizontal inputs
     public void Move(InputAction.CallbackContext context){
         direction=context.ReadValue<Vector2>();
     }
     #endregion
-    #region Vertical inputs
+    #region Jump inputs
      public void Jump(InputAction.CallbackContext context){
         if(context.started){
         jumpPressed=true;
@@ -81,7 +79,6 @@ public class newPlayerMovement : MonoBehaviour
         }
     }
     #endregion
- 
     #region horizontalMovement Calcs
     public void applyMovement(float x){
         if(Mathf.Abs(rb.velocity.y)<=0){
@@ -107,8 +104,7 @@ public class newPlayerMovement : MonoBehaviour
         }
     }
     #endregion
-   
-   #region verticalMovement Calcs
+    #region Jump Calcs
    public void applyJump(){
        lastGrounded=0;
         lastJumpPressed=0;
