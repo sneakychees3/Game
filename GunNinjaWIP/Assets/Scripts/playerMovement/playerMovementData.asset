@@ -19,7 +19,7 @@ MonoBehaviour:
   airDecel: 5
   accPower: 0.96
   horizontalFriction: 0.95
-  jumpForce: 600
+  jumpForce: 13
   jumpCutAmount: 0.4
   gravityScale: 2.7
   fallMultiplier: 2
