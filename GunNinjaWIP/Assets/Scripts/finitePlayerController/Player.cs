@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 
     public playerMovestate moveState{get;private set;}
 
-    public Animator anim{get;private set;}
+    public Animator anim{get;private set;} //need animations to use
     public Rigidbody2D rb{get; private set;}
 
     public playerInput handler{get;private set;}
