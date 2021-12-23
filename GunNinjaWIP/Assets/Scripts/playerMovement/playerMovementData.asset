@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dee6a14000bc6c4aae1015c00eb92c6, type: 3}
   m_Name: playerMovementData
   m_EditorClassIdentifier: 
-  maxSpeed: 9
-  acc: 13
+  maxSpeed: 10
+  acc: 20
   decc: 13
   airAcc: 5
   airDecel: 5
