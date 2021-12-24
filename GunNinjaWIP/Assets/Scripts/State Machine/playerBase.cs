@@ -5,51 +5,23 @@ using UnityEngine.InputSystem;
 public abstract class playerBase
 {
     #region components
-    protected Rigidbody2D rb;
+    public Rigidbody2D rb{get;private set;}
     public playerData pd;
     //protected Collisions colls;
     protected Animator anim;
     protected player player;
     protected stateMachine stm;
+    protected inputHandler inputs;
     #endregion
-    
-    #region input getters
-    public Vector2 direction { get; private set; }
-    public float lastJumpPressed { get; private set; }
-    public float lastGrounded{get;private set;}
-    public bool jumpReleased { get; private set; }
-    #endregion 
+    public float lastGrounded=0f;
     #region constructor
     public playerBase(player player,stateMachine stm){
         this.player=player;
         this.stm=stm;
         anim=player.GetComponent<Animator>();
         rb=player.GetComponent<Rigidbody2D>();
+        inputs=player.GetComponent<inputHandler>();
         //colls=player.GetComponent<Collisions>();
-    }
-    #endregion
-    private void Start() {
-        lastJumpPressed=0;
-        jumpReleased=false;
-    }
-    
-
-    #region inputs
-    public void Move(InputAction.CallbackContext context)
-    {
-        direction = context.ReadValue<Vector2>();
-    }
-    public void Jump(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            lastJumpPressed = player.pd.lastJumpPressedTime;
-        }
-
-        if (context.canceled && player.rb.velocity.y > 0 && !jumpReleased)
-        {
-            jumpReleased = true;
-        }
     }
     #endregion
     
@@ -57,7 +29,7 @@ public abstract class playerBase
 
     }
     public virtual void logic(){
-        lastJumpPressed-=Time.deltaTime;
+        inputs.lastJumpPressed-=Time.deltaTime;
         if(player.isGrounded()){
             lastGrounded=player.pd.lastGroundedTime;
         }

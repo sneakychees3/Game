@@ -23,10 +23,10 @@ public class idleState : playerBase
     public override void logic()
     {
         base.logic();
-        if((Mathf.Abs(direction.x)>0.01f)&&player.isGrounded()){
+        if((Mathf.Abs(inputs.direction.x)>0.01f)&&(player.isGrounded())){
             stm.ChangeState(player.move);
         }
-        else if(lastJumpPressed>0&&lastGrounded>0){
+        if(inputs.lastJumpPressed>0&&lastGrounded>0){
             stm.ChangeState(player.jump);
         }
     }
@@ -34,6 +34,7 @@ public class idleState : playerBase
     public override void physics()
     {
         base.physics();
+        rb.velocity=new Vector2(0,0);
     }
 
 

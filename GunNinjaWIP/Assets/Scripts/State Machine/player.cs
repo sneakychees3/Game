@@ -29,8 +29,8 @@ public class player : MonoBehaviour
     void Awake() {
         rb=this.GetComponent<Rigidbody2D>();
         stm=this.GetComponent<stateMachine>();
-        initializeStates();
-        stm.Initialize(idle);
+        this.initializeStates();
+        stm.Initialize(this.idle);
     }
 
     void Update()

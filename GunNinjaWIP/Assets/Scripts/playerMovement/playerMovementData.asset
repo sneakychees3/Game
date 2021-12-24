@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 10
   acc: 20
-  decc: 13
+  decc: 12
   airAcc: 5
   airDecel: 5
   accPower: 0.96
