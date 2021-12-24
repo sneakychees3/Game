@@ -17,7 +17,7 @@ public class player : MonoBehaviour
     public LayerMask groundLayer;
     #endregion
     #region states
-    
+    //all states go here so we can switch between them
     #endregion
     void initializeStates(){
         
