@@ -8,7 +8,7 @@ public class player : MonoBehaviour
     public Rigidbody2D rb{get;private set;}
     [SerializeField] public playerData pd;
     public stateMachine stm{get;private set;}
-    
+
     #region conditions
     Vector2 currentV=Vector2.zero;
     public float collisionRadius = 0.25f;
@@ -17,17 +17,20 @@ public class player : MonoBehaviour
     public LayerMask groundLayer;
     #endregion
     #region states
-    //all states go here so we can switch between them
+    public idleState idle;
+    public moveState move;
+    public jumpState jump;
     #endregion
     void initializeStates(){
-        
-        //always initialize new states here 
+        idle=new idleState(this,stm);
+        move=new moveState(this,stm);
+        jump=new jumpState(this,stm);
     }
     void Awake() {
         rb=this.GetComponent<Rigidbody2D>();
         stm=this.GetComponent<stateMachine>();
         initializeStates();
-        //stm.Initialize(idle);
+        stm.Initialize(idle);
     }
 
     void Update()

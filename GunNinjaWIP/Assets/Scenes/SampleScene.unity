@@ -1486,9 +1486,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1314557666}
   - component: {fileID: 1314557665}
-  - component: {fileID: 1314557664}
-  - component: {fileID: 1314557663}
   - component: {fileID: 1314557662}
+  - component: {fileID: 1314557663}
   m_Layer: 0
   m_Name: newPlayer
   m_TagString: Untagged
@@ -1508,42 +1507,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d43e455acea15948ba807cf2e8d99ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1314557663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314557661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4496fe63d08ac449c3490ec06f95d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  onGround: 0
-  onWall: 0
-  onRightWall: 0
-  onLeftWall: 0
-  wallSide: 0
+  pd: {fileID: 11400000, guid: 57f6d16e535f7b84e8f60ad33d527055, type: 2}
   collisionRadius: 0.23
   bottomOffset: {x: 0, y: -0.42}
   rightOffset: {x: 0.08, y: 0}
   leftOffset: {x: -0.08, y: 0}
---- !u!114 &1314557664
-MonoBehaviour:
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!50 &1314557663
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314557661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1c7f042265c6bf4c9685e0efcbcf055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 2e32085640159354b9b40be6d909bcef, type: 2}
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!212 &1314557665
 SpriteRenderer:
   m_ObjectHideFlags: 0

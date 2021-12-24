@@ -6,8 +6,8 @@ public abstract class playerBase
 {
     #region components
     protected Rigidbody2D rb;
-    [SerializeField] playerData pd;
-    protected Collisions colls;
+    public playerData pd;
+    //protected Collisions colls;
     protected Animator anim;
     protected player player;
     protected stateMachine stm;
@@ -16,6 +16,7 @@ public abstract class playerBase
     #region input getters
     public Vector2 direction { get; private set; }
     public float lastJumpPressed { get; private set; }
+    public float lastGrounded{get;private set;}
     public bool jumpReleased { get; private set; }
     #endregion 
     #region constructor
@@ -24,7 +25,7 @@ public abstract class playerBase
         this.stm=stm;
         anim=player.GetComponent<Animator>();
         rb=player.GetComponent<Rigidbody2D>();
-        colls=player.GetComponent<Collisions>();
+        //colls=player.GetComponent<Collisions>();
     }
     #endregion
     private void Start() {
@@ -56,7 +57,11 @@ public abstract class playerBase
 
     }
     public virtual void logic(){
-
+        lastJumpPressed-=Time.deltaTime;
+        if(player.isGrounded()){
+            lastGrounded=player.pd.lastGroundedTime;
+        }
+        else lastGrounded-=Time.deltaTime;
     }
     public virtual void physics(){
 
