@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     }
     private void Update() { 
         stm.currentState.Logic();
+        Debug.Log(handler.movement.x);
     }
     private void FixedUpdate(){
         stm.currentState.Physics();

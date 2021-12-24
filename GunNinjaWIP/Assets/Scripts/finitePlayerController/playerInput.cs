@@ -9,8 +9,9 @@ public class playerInput : MonoBehaviour
 
    public void onMove(InputAction.CallbackContext context){
        movement=context.ReadValue<Vector2>();
+       Debug.Log(movement);
     }
    public void onJump(InputAction.CallbackContext context){
-       
+       Debug.Log("jumps");
    }
 }
