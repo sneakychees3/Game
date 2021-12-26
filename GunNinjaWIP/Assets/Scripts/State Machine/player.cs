@@ -10,21 +10,23 @@ public class player : MonoBehaviour
     public stateMachine stm{get;private set;}
 
     #region conditions
-    Vector2 currentV=Vector2.zero;
     public float collisionRadius = 0.25f;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
     public LayerMask groundLayer;
+    public bool isJumping=false;
     #endregion
     #region states
     public idleState idle;
     public moveState move;
     public jumpState jump;
+    public fallState fall;
     #endregion
     void initializeStates(){
         idle=new idleState(this,stm);
         move=new moveState(this,stm);
         jump=new jumpState(this,stm);
+        fall=new fallState(this,stm);
     }
     void Awake() {
         rb=this.GetComponent<Rigidbody2D>();
@@ -36,15 +38,11 @@ public class player : MonoBehaviour
     void Update()
     {
         stm.currentState.logic();
-        currentV=rb.velocity;
     }
     void FixedUpdate() {
         stm.currentState.physics();
     }
     #region conditions
-    public bool isMovingX(){
-        return Mathf.Abs(currentV.x)>0.01f;
-    }
     public bool isGrounded(){
         return Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
     }

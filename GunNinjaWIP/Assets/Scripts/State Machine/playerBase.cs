@@ -7,7 +7,7 @@ public abstract class playerBase
     #region components
     public Rigidbody2D rb{get;private set;}
     public playerData pd;
-    //protected Collisions colls;
+    public Renderer r;
     protected Animator anim;
     protected player player;
     protected stateMachine stm;
@@ -21,7 +21,7 @@ public abstract class playerBase
         anim=player.GetComponent<Animator>();
         rb=player.GetComponent<Rigidbody2D>();
         inputs=player.GetComponent<inputHandler>();
-        //colls=player.GetComponent<Collisions>();
+        r=player.GetComponent<SpriteRenderer>();
     }
     #endregion
     

@@ -980,7 +980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c670375a7b639c84389ad405f941e644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 337924787}
+  target: {fileID: 1314557666}
   smoothSpeed: 1
   offset: {x: 0, y: 0, z: -2}
 --- !u!20 &519420031
@@ -1519,6 +1519,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  isJumping: 0
 --- !u!50 &1314557663
 Rigidbody2D:
   serializedVersion: 4
@@ -1655,6 +1656,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0a47db4e186a9428e7056e6bb47e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastJumpPressed: 0
+  jumpReleased: 0
+  player: {fileID: 0}
 --- !u!114 &1314557669
 MonoBehaviour:
   m_ObjectHideFlags: 0

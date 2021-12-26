@@ -11,7 +11,7 @@ public class moveState : playerBase
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("moveState");
+        r.material.color=Color.red;
     }
 
     public override void Exit()
@@ -22,7 +22,14 @@ public class moveState : playerBase
     public override void logic()
     {
         base.logic();
-       
+       if(inputs.direction.x==0&&player.isGrounded()&&Mathf.Abs(rb.velocity.x)<=0.01f){
+           stm.ChangeState(player.idle);
+       }
+       else if(lastGrounded>0&&inputs.lastJumpPressed>0){
+           stm.ChangeState(player.jump);
+       }else if(rb.velocity.y<0&&lastGrounded<=0){
+            stm.ChangeState(player.fall);
+        }
     }
 
     public override void physics()

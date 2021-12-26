@@ -12,6 +12,7 @@ public class idleState : playerBase
     public override void Enter()
     {
         base.Enter();
+        r.material.color=Color.magenta;
         Debug.Log("idleState");
     }
 
@@ -25,9 +26,10 @@ public class idleState : playerBase
         base.logic();
         if((Mathf.Abs(inputs.direction.x)>0.01f)&&(player.isGrounded())){
             stm.ChangeState(player.move);
-        }
-        if(inputs.lastJumpPressed>0&&lastGrounded>0){
+        }else if(inputs.lastJumpPressed>0&&lastGrounded>0){
             stm.ChangeState(player.jump);
+        }else if(rb.velocity.y<0&&lastGrounded<=0){
+            stm.ChangeState(player.fall);
         }
     }
 
