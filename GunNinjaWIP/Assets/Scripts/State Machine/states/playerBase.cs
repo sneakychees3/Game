@@ -30,6 +30,7 @@ public abstract class playerBase
     }
     public virtual void logic(){
         inputs.lastJumpPressed-=Time.deltaTime;
+        player.pd.lastDash-=Time.deltaTime;
         if(player.isGrounded()){
             lastGrounded=player.pd.lastGroundedTime;
         }

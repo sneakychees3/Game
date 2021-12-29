@@ -31,6 +31,9 @@ public class idleState : playerBase
         }else if(rb.velocity.y<0&&lastGrounded<=0){
             stm.ChangeState(player.fall);
         }
+        else if(inputs.dashPressed){
+            stm.ChangeState(player.dash);
+        }
     }
 
     public override void physics()

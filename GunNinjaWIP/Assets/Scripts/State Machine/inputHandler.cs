@@ -9,6 +9,7 @@ public class inputHandler : MonoBehaviour
     public Vector2 direction { get; private set; }
     public float lastJumpPressed;
     public bool jumpReleased; 
+    public bool dashPressed;
     [SerializeField] player player;
     void Start()
     {
@@ -32,5 +33,9 @@ public class inputHandler : MonoBehaviour
             jumpReleased = true;
         }
     }
-    
+    public void Dash(InputAction.CallbackContext context){
+        if(context.performed&&player.pd.lastDash<=0){
+            dashPressed=true;
+        }
+    }
 }

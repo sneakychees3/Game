@@ -24,5 +24,11 @@ public class playerData : ScriptableObject
     [Header("Timers")]
     public float lastGroundedTime=0.1f;
     public float lastJumpPressedTime=0.1f;
+    [Header("Dash stuff")]
+    public float dashMultiplier=5;
+    public float dashCoolDown=1f;
+    public float dashTime=1f;
+    public float distanceBetweenImages=0.5f;
+    public float lastDash=-100;
     
 }

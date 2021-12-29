@@ -28,8 +28,9 @@ public class jumpState : playerBase
         base.logic();
         if(inputs.jumpReleased||rb.velocity.y<0){
             stm.ChangeState(player.fall);
+        }else if(inputs.dashPressed){
+            stm.ChangeState(player.dash);
         }
-
     }
 
     public override void physics()

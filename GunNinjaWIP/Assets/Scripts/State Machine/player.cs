@@ -21,12 +21,14 @@ public class player : MonoBehaviour
     public moveState move;
     public jumpState jump;
     public fallState fall;
+    public dashState dash;
     #endregion
     void initializeStates(){
         idle=new idleState(this,stm);
         move=new moveState(this,stm);
         jump=new jumpState(this,stm);
         fall=new fallState(this,stm);
+        dash=new dashState(this,stm);
     }
     void Awake() {
         rb=this.GetComponent<Rigidbody2D>();

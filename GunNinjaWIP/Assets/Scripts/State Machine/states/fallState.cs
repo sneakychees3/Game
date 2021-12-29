@@ -27,7 +27,11 @@ public class fallState : playerBase
         if(rb.velocity.y==0&&player.isGrounded()){
             resetJumpBools();
             stm.ChangeState(player.idle);
-        }
+        } else if(inputs.dashPressed){
+            stm.ChangeState(player.dash);
+        }else if((Mathf.Abs(inputs.direction.x)>0.01f)&&(player.isGrounded())){
+            stm.ChangeState(player.move);
+    }
     }
 
     public override void physics()
