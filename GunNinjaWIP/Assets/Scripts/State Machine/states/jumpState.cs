@@ -28,7 +28,7 @@ public class jumpState : playerBase
         base.logic();
         if(inputs.jumpReleased||rb.velocity.y<0){
             stm.ChangeState(player.fall);
-        }else if(inputs.dashPressed){
+        }else if(inputs.dashPressed&&player.pd.canDash){
             stm.ChangeState(player.dash);
         }
     }

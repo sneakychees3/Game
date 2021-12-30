@@ -29,7 +29,7 @@ public class moveState : playerBase
            stm.ChangeState(player.jump);
        }else if(rb.velocity.y<0&&lastGrounded<=0){
             stm.ChangeState(player.fall);
-        } else if(inputs.dashPressed){
+        } else if(inputs.dashPressed&&player.pd.canDash){
             stm.ChangeState(player.dash);
         }
     }

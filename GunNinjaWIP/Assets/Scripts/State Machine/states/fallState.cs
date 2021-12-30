@@ -19,15 +19,15 @@ public class fallState : playerBase
     {
         base.Exit();
         rb.gravityScale=player.pd.gravityScale;
+         resetJumpBools();
     }
 
     public override void logic()
     {
         base.logic();
         if(rb.velocity.y==0&&player.isGrounded()){
-            resetJumpBools();
             stm.ChangeState(player.idle);
-        } else if(inputs.dashPressed){
+        } else if(inputs.dashPressed&&player.pd.canDash){
             stm.ChangeState(player.dash);
         }else if((Mathf.Abs(inputs.direction.x)>0.01f)&&(player.isGrounded())){
             stm.ChangeState(player.move);

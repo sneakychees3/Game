@@ -25,10 +25,11 @@ public class playerData : ScriptableObject
     public float lastGroundedTime=0.1f;
     public float lastJumpPressedTime=0.1f;
     [Header("Dash stuff")]
-    public float dashMultiplier=5;
+    public float dashMultiplier=20;
     public float dashCoolDown=1f;
-    public float dashTime=1f;
+    public float dashTime=.3f;
     public float distanceBetweenImages=0.5f;
     public float lastDash=-100;
+     public bool canDash=true;
     
 }

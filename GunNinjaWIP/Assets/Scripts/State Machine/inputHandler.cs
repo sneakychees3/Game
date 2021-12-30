@@ -34,7 +34,7 @@ public class inputHandler : MonoBehaviour
         }
     }
     public void Dash(InputAction.CallbackContext context){
-        if(context.performed&&player.pd.lastDash<=0){
+        if(context.performed){
             dashPressed=true;
         }
     }

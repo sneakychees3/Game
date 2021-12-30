@@ -16,25 +16,28 @@ public class dashState : playerBase
     public override void Enter()
     {
         base.Enter();
-        player.pd.lastDash=player.pd.dashCoolDown;
+        player.pd.lastDash=Time.time;
         initialVelocity=rb.velocity;
         initialXdirection=inputs.direction.x;
+        rb.velocity=Vector2.zero;
+        dashTimeLeft=player.pd.dashTime;
         dash();
     }
 
     public override void Exit()
     {
         base.Exit();
-        rb.velocity=initialVelocity;
+        dashStopped=false;
     }
 
     public override void logic()
     {
         base.logic();
         dashTimeLeft-=Time.deltaTime;
-        if(Mathf.Abs(initialXdirection-inputs.direction.x)>0.4f)
+        if(Mathf.Sign(inputs.direction.x)!=Mathf.Sign(initialXdirection))
         {
             dashStopped=true;
+            Debug.Log("canceled");
         }
         if(dashStopped||dashTimeLeft<=0){
             inputs.dashPressed=false;
