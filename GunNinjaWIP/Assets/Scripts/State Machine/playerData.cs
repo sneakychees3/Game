@@ -30,6 +30,6 @@ public class playerData : ScriptableObject
     public float dashTime=.3f;
     public float distanceBetweenImages=0.5f;
     public float lastDash=-100;
-     public bool canDash=true;
+    public bool canDash=true;
     
 }
