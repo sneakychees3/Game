@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class dashState : playerBase
 {
-    public float lastDash;
     public bool isDashing=false;
+    float tempCounter=0;
+    bool dashStopped=false;
     public dashState(player player, stateMachine stm) : base(player, stm)
     {
     }
@@ -13,7 +14,7 @@ public class dashState : playerBase
     public override void Enter()
     {
         base.Enter();
-        lastDash=Time.time;
+        player.pd.lastDash=Time.time;
         rb.gravityScale=0;
         dash();
     }
@@ -21,16 +22,22 @@ public class dashState : playerBase
     public override void Exit()
     {
         base.Exit();
-        rb.velocity=Vector2.zero;
         inputs.dashPressed=false;
+        tempCounter=0;
+        dashStopped=false;
+        player.pd.canDash=false;
     }
 
     public override void logic()
     {
         base.logic();
-        if(Time.time>=lastDash+player.pd.dashTime){
+        if(Time.time>=player.pd.lastDash+player.pd.dashTime||dashStopped){
+            tempCounter++;
+            if(tempCounter==1){
             isDashing=false;
             rb.gravityScale=player.pd.gravityScale;
+            rb.velocity=Vector2.zero;
+            }
             if(player.isGrounded()&&(Mathf.Abs(inputs.direction.x)>0.01f)){
                 stm.ChangeState(player.move);
             }
@@ -46,6 +53,14 @@ public class dashState : playerBase
     public override void physics()
     {
         base.physics();
+        if(player.isTouchingWall()==1||player.isTouchingWall()==-1){
+            Debug.Log("Wall detected");
+            dashStopped=true;
+        }
+        else if (player.isGrounded()&&rb.velocity.y<0){
+            Debug.Log("Ground Dectected");
+            dashStopped=true;
+        }
     }
 
     void dash(){

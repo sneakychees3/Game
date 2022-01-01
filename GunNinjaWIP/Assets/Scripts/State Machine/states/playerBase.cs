@@ -34,6 +34,9 @@ public abstract class playerBase
             lastGrounded=player.pd.lastGroundedTime;
         }
         else lastGrounded-=Time.deltaTime;
+        if(Time.time>=player.pd.lastDash+player.pd.dashCoolDown){
+            player.pd.canDash=true;
+        }
     }
     public virtual void physics(){
 

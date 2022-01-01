@@ -52,6 +52,9 @@ public class player : MonoBehaviour
         bool onRightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
         bool onLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
 
+        if(!onRightWall&&!onLeftWall){
+            return 0;
+        }else
         return onRightWall ? -1 : 1;
     }
     void OnDrawGizmos()

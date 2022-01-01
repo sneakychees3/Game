@@ -19,7 +19,7 @@ public class fallState : playerBase
     {
         base.Exit();
         rb.gravityScale=player.pd.gravityScale;
-         resetJumpBools();
+        resetJumpBools();
     }
 
     public override void logic()
