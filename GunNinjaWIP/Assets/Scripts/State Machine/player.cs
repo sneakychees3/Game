@@ -10,32 +10,27 @@ public class player : MonoBehaviour
 	[Header("Toggle for the gui on off")]
 	public bool NPCGuiOn;
 
-
 	[Space(10)]
 	[Header("The text to Display on Trigger")]
-	[Tooltip("To edit the look of the text Go to Assets > Create > GUIskin. Add the new Guiskin to the Custom Skin proptery. If you select the GUIskin in your project tab you can now adjust the Label section to change this text")]
-	public string Text = "Turn Back";
-
-	[Tooltip("This is the window Box's size. It will be mid screen. Add or reduce the X and Y to move the box in Pixels. ")]
+	public string Text = "test";
 	public Rect BoxSize = new Rect( 0, 0, 200, 100);
 
-
 	[Space(10)]
-	[Tooltip("To edit the look of the text Go to Assets > Create > GUIskin. Add the new Guiskin to the Custom Skin proptery. If you select the GUIskin in your project tab you can now adjust the font, colour, size etc of the text")]
 	public GUISkin customSkin;
     #endregion
     
     public Rigidbody2D rb{get;private set;}
     [SerializeField] public playerData pd;
     public stateMachine stm{get;private set;}
-
+    public LayerMask groundLayer;
+    
     #region conditions
     public float collisionRadius = 0.25f;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
-    public LayerMask groundLayer;
     public bool isJumping=false;
     #endregion
+    
     #region states
     public idleState idle;
     public moveState move;

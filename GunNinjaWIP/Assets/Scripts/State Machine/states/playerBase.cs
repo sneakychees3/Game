@@ -12,12 +12,15 @@ public abstract class playerBase
     protected player player;
     protected stateMachine stm;
     protected inputHandler inputs;
+    public string animBoolName;
+    public int facingDirection;
     #endregion
     public float lastGrounded=0f;
     
     
     #region constructor
     public playerBase(player player,stateMachine stm){
+        facingDirection=1;
         this.player=player;
         this.stm=stm;
         anim=player.GetComponent<Animator>();
@@ -28,7 +31,7 @@ public abstract class playerBase
     #endregion
     
     public virtual void Enter(){
-
+        anim.SetBool(animBoolName,true);
     }
     public virtual void logic(){
         inputs.lastJumpPressed-=Time.deltaTime;
@@ -41,12 +44,22 @@ public abstract class playerBase
         }else if(!player.pd.canDash&&inputs.dashPressed){
             inputs.dashPressed=false;
         }
+        
     }
     public virtual void physics(){
 
     }
     public virtual void Exit(){
-        
+        anim.SetBool(animBoolName,false);
     }
      
+    public void flip(){
+        facingDirection*=-1;
+        player.transform.Rotate(0.0f,180.0f,0.0f);
+    } 
+    public void checkIfShouldFlip(float x){
+        if(x!=0&&x!=facingDirection){
+            flip();
+        }
+    }
 }

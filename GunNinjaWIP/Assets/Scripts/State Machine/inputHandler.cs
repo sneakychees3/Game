@@ -26,7 +26,7 @@ public class inputHandler : MonoBehaviour
     }
     public void Move(InputAction.CallbackContext context)
     {
-        direction = context.ReadValue<Vector2>();
+        direction = context.ReadValue<Vector2>().normalized;
     }
     public void Jump(InputAction.CallbackContext context)
     {

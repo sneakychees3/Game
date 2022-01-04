@@ -11,7 +11,6 @@ public class fallState : playerBase
     public override void Enter()
     {
         base.Enter();
-        r.material.color=Color.black;
         rb.gravityScale=player.pd.gravityScale*player.pd.fallMultiplier;
     }
 

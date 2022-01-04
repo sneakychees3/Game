@@ -53,14 +53,6 @@ public class dashState : playerBase
     public override void physics()
     {
         base.physics();
-        if(player.isTouchingWall()==1||player.isTouchingWall()==-1){
-            Debug.Log("Wall detected");
-            dashStopped=true;
-        }
-        else if (player.isGrounded()&&rb.velocity.y<0){
-            Debug.Log("Ground Dectected");
-            dashStopped=true;
-        }
     }
 
     void dash(){

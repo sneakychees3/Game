@@ -11,9 +11,8 @@ public class idleState : playerBase
 
     public override void Enter()
     {
+        animBoolName="idle";
         base.Enter();
-        r.material.color=Color.magenta;
-        Debug.Log("idleState");
     }
 
     public override void Exit()

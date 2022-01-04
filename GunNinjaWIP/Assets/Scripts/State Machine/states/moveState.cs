@@ -10,8 +10,8 @@ public class moveState : playerBase
 
     public override void Enter()
     {
+        animBoolName="move";
         base.Enter();
-        r.material.color=Color.red;
     }
 
     public override void Exit()
@@ -37,6 +37,7 @@ public class moveState : playerBase
     public override void physics()
     {
         base.physics();
+        checkIfShouldFlip(inputs.direction.x);
         applyMovement();
     }
 

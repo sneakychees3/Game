@@ -12,8 +12,6 @@ public class jumpState : playerBase
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("jumpState");
-        r.material.color=Color.green;
         applyJump();
     }
 
