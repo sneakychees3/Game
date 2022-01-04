@@ -26,8 +26,8 @@ MonoBehaviour:
   lastGroundedTime: 0.1
   lastJumpPressedTime: 0.1
   dashMultiplier: 30
-  dashCoolDown: 0.1
+  dashCoolDown: 0.7
   dashTime: 0.1
   distanceBetweenImages: 0.5
-  lastDash: -2.2164216
+  lastDash: 80.12368
   canDash: 1

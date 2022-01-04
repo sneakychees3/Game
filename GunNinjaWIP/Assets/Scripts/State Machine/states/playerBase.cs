@@ -14,6 +14,8 @@ public abstract class playerBase
     protected inputHandler inputs;
     #endregion
     public float lastGrounded=0f;
+    
+    
     #region constructor
     public playerBase(player player,stateMachine stm){
         this.player=player;
@@ -46,4 +48,5 @@ public abstract class playerBase
     public virtual void Exit(){
         
     }
+     
 }
