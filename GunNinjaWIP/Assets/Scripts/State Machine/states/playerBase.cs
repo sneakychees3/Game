@@ -36,6 +36,8 @@ public abstract class playerBase
         else lastGrounded-=Time.deltaTime;
         if(Time.time>=player.pd.lastDash+player.pd.dashCoolDown){
             player.pd.canDash=true;
+        }else if(!player.pd.canDash&&inputs.dashPressed){
+            inputs.dashPressed=false;
         }
     }
     public virtual void physics(){
