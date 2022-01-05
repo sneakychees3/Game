@@ -1,0 +1,519 @@
+fileFormatVersion: 2
+guid: 49a5f19839fcf3a43b0254a346a95097
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1260561319121010281
+    second: ninja_better_run_0
+  - first:
+      213: -8509703821372020316
+    second: ninja_better_run_1
+  - first:
+      213: -4315886397786561434
+    second: ninja_better_run_2
+  - first:
+      213: -8026784464822820052
+    second: ninja_better_run_3
+  - first:
+      213: -8419371173828815583
+    second: ninja_better_run_4
+  - first:
+      213: -7864270309461602993
+    second: ninja_better_run_5
+  - first:
+      213: 4406262180133379823
+    second: ninja_better_run_6
+  - first:
+      213: -5309085708139316193
+    second: ninja_better_run_7
+  - first:
+      213: -8178925906100069370
+    second: ninja_better_run_8
+  - first:
+      213: 907063355917600199
+    second: ninja_better_run_9
+  - first:
+      213: 7051185527989770396
+    second: ninja_better_run_10
+  - first:
+      213: 4400495896313191746
+    second: ninja_better_run_11
+  - first:
+      213: -7538076231751322927
+    second: ninja_better_run_12
+  - first:
+      213: 3444500758081565283
+    second: ninja_better_run_13
+  - first:
+      213: 2253928420266683785
+    second: ninja_better_run_14
+  - first:
+      213: 3965171850855739398
+    second: ninja_better_run_15
+  - first:
+      213: -3879886610868608772
+    second: ninja_better_run_16
+  - first:
+      213: 2953120431338036017
+    second: ninja_better_run_17
+  - first:
+      213: 2860014403571063909
+    second: ninja_better_run_18
+  - first:
+      213: -3388071539275667343
+    second: ninja_better_run_19
+  - first:
+      213: 8157092397134365941
+    second: ninja_better_run_20
+  - first:
+      213: 581647315664457708
+    second: ninja_better_run_21
+  - first:
+      213: 4569197995204920676
+    second: ninja_better_run_22
+  - first:
+      213: 4592975140829553068
+    second: ninja_better_run_23
+  - first:
+      213: 4178527214276123577
+    second: ninja_better_run_24
+  - first:
+      213: -6966363742782745919
+    second: ninja_better_run_25
+  - first:
+      213: -5903966614720968977
+    second: ninja_better_run_26
+  - first:
+      213: -2021449647725294581
+    second: ninja_better_run_27
+  - first:
+      213: 1343181213595750373
+    second: ninja_better_run_28
+  - first:
+      213: -8237994354228388620
+    second: ninja_better_run_29
+  - first:
+      213: -1483321824178780748
+    second: ninja_better_run_30
+  - first:
+      213: 6750416424618842407
+    second: ninja_better_run_31
+  - first:
+      213: -6155416432601427585
+    second: ninja_better_run_32
+  - first:
+      213: -4899047794524347867
+    second: ninja_better_run_33
+  - first:
+      213: -2898332593183667627
+    second: ninja_better_run_34
+  - first:
+      213: -7910141853210486712
+    second: ninja_better_run_35
+  - first:
+      213: -3438019607214080761
+    second: ninja_better_run_36
+  - first:
+      213: 7940435570229430827
+    second: ninja_better_run_37
+  - first:
+      213: 464759831665573818
+    second: ninja_better_run_38
+  - first:
+      213: 4220090169678229447
+    second: ninja_better_run_39
+  - first:
+      213: -2729926500854195988
+    second: ninja_better_run_40
+  - first:
+      213: 6203949118730609425
+    second: ninja_better_run_41
+  - first:
+      213: 3106176055142430504
+    second: ninja_better_run_42
+  - first:
+      213: 6254142842311377901
+    second: ninja_better_run_43
+  - first:
+      213: 4340593401250568864
+    second: ninja_better_run_44
+  - first:
+      213: 4436203169167429599
+    second: ninja_better_run_45
+  - first:
+      213: -682518811121323065
+    second: ninja_better_run_46
+  - first:
+      213: -8094215522333394974
+    second: ninja_better_run_47
+  - first:
+      213: -2417953729810821534
+    second: ninja_better_run_48
+  - first:
+      213: -669945410288447400
+    second: ninja_better_run_49
+  - first:
+      213: 4407963197455195194
+    second: ninja_better_run_50
+  - first:
+      213: 875323711146717951
+    second: ninja_better_run_51
+  - first:
+      213: -6021466057408368248
+    second: ninja_better_run_52
+  - first:
+      213: 1635721130959258323
+    second: ninja_better_run_53
+  - first:
+      213: 4327032963107427970
+    second: ninja_better_run_54
+  - first:
+      213: 7119975483226130703
+    second: ninja_better_run_55
+  - first:
+      213: 4243613951915972574
+    second: ninja_better_run_56
+  - first:
+      213: 5987861745281512714
+    second: ninja_better_run_57
+  - first:
+      213: -3475561527967594445
+    second: ninja_better_run_58
+  - first:
+      213: -3328268596811531899
+    second: ninja_better_run_59
+  - first:
+      213: -7091154292612352717
+    second: ninja_better_run_60
+  - first:
+      213: 1786474637662221499
+    second: ninja_better_run_61
+  - first:
+      213: 2879048961775987020
+    second: ninja_better_run_62
+  - first:
+      213: -1058850303424578797
+    second: ninja_better_run_63
+  - first:
+      213: -6548294855653268800
+    second: ninja_better_run_64
+  - first:
+      213: 6284572599203730333
+    second: ninja_better_run_65
+  - first:
+      213: -8416215378732581574
+    second: ninja_better_run_66
+  - first:
+      213: 8740873750927638916
+    second: ninja_better_run_67
+  - first:
+      213: -2314714298479648195
+    second: ninja_better_run_68
+  - first:
+      213: 6250661475340935784
+    second: ninja_better_run_69
+  - first:
+      213: -7857731264407231252
+    second: ninja_better_run_70
+  - first:
+      213: -5371693492081142182
+    second: ninja_better_run_71
+  - first:
+      213: -4238146685180686227
+    second: ninja_better_run_72
+  - first:
+      213: -7647623259478112061
+    second: ninja_better_run_73
+  - first:
+      213: -7815053862120718638
+    second: ninja_better_run_74
+  - first:
+      213: 933084187015169611
+    second: ninja_better_run_75
+  - first:
+      213: -1642875908512289531
+    second: ninja_better_run_76
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ninja_better_run_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 156
+        width: 84
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791c134b826918ee0800000000000000
+      internalID: -1260561319121010281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_better_run_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 96
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a92657f57577e980800000000000000
+      internalID: -8509703821372020316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_better_run_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 152
+        width: 76
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664edf01034ea14c0800000000000000
+      internalID: -4315886397786561434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_better_run_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 152
+        width: 72
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23ac959e022b9090800000000000000
+      internalID: -8026784464822820052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_better_run_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12515cf6682682b80800000000000000
+      internalID: -8419371173828815583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_better_run_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 8
+        width: 96
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4dc3eaf1df7cd290800000000000000
+      internalID: -7864270309461602993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_better_run_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 4
+        width: 72
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee96128b10362d30800000000000000
+      internalID: 4406262180133379823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_better_run_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 8
+        width: 76
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cb04c5da65256b0800000000000000
+      internalID: -5309085708139316193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

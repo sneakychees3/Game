@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class inputHandler : MonoBehaviour
 {
-    public Vector2 direction { get; private set; }
+    public Vector2Int direction { get; private set; }
     public float lastJumpPressed;
     public bool jumpReleased; 
     public bool dashPressed;
@@ -26,7 +26,7 @@ public class inputHandler : MonoBehaviour
     }
     public void Move(InputAction.CallbackContext context)
     {
-        direction = context.ReadValue<Vector2>().normalized;
+        direction = Vector2Int.RoundToInt(context.ReadValue<Vector2>());
     }
     public void Jump(InputAction.CallbackContext context)
     {

@@ -28,6 +28,8 @@ public class jumpState : playerBase
             stm.ChangeState(player.fall);
         }else if(inputs.dashPressed&&player.pd.canDash){
             stm.ChangeState(player.dash);
+        }else{
+            checkIfShouldFlip(inputs.direction.x);
         }
     }
 

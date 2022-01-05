@@ -57,7 +57,7 @@ public abstract class playerBase
         facingDirection*=-1;
         player.transform.Rotate(0.0f,180.0f,0.0f);
     } 
-    public void checkIfShouldFlip(float x){
+    public void checkIfShouldFlip(int x){
         if(x!=0&&x!=facingDirection){
             flip();
         }

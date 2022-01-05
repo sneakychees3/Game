@@ -31,6 +31,9 @@ public class fallState : playerBase
         }else if((Mathf.Abs(inputs.direction.x)>0.01f)&&(player.isGrounded())){
             stm.ChangeState(player.move);
     }
+        else{
+            checkIfShouldFlip(inputs.direction.x);
+        }
     }
 
     public override void physics()
