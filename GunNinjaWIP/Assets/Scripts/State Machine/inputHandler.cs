@@ -48,9 +48,6 @@ public class inputHandler : MonoBehaviour
     }
     public void onDashDirection(InputAction.CallbackContext context){
         RawDashDirectionInput=context.ReadValue<Vector2>();
-        if(pInput.currentControlScheme=="Keyboard&Mouse"){
-            RawDashDirectionInput=cam.ScreenToWorldPoint((Vector3)RawDashDirectionInput)-transform.position;
-        }
         dashDirectionInput=Vector2Int.RoundToInt(RawDashDirectionInput.normalized);
     }
 }
