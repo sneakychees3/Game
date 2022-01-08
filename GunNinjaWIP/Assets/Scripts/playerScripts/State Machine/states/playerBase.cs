@@ -13,16 +13,15 @@ public abstract class playerBase
     protected stateMachine stm;
     protected inputHandler inputs;
     public string animBoolName;
-    public int facingDirection;
     #endregion
     public float lastGrounded=0f;
     
     
     #region constructor
     public playerBase(player player,stateMachine stm){
-        facingDirection=1;
         this.player=player;
         this.stm=stm;
+        player.facingDirection=1;
         anim=player.GetComponent<Animator>();
         rb=player.GetComponent<Rigidbody2D>();
         inputs=player.GetComponent<inputHandler>();
@@ -53,13 +52,5 @@ public abstract class playerBase
         anim.SetBool(animBoolName,false);
     }
      
-    public void flip(){
-        facingDirection*=-1;
-        player.transform.Rotate(0.0f,180.0f,0.0f);
-    } 
-    public void checkIfShouldFlip(int x){
-        if(x!=0&&x!=facingDirection){
-            flip();
-        }
-    }
+    
 }

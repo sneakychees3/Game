@@ -37,7 +37,7 @@ public class moveState : playerBase
     public override void physics()
     {
         base.physics();
-        checkIfShouldFlip(inputs.direction.x);
+        player.checkIfShouldFlip(inputs.direction.x);
         applyMovement();
     }
 

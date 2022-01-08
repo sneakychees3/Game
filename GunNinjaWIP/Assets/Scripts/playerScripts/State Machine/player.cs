@@ -29,6 +29,7 @@ public class player : MonoBehaviour
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
     public bool isJumping=false;
+    public int facingDirection;
     #endregion
     
     #region states
@@ -116,4 +117,13 @@ public class player : MonoBehaviour
 
 
 	}
+    public void flip(){
+        facingDirection*=-1;
+        this.transform.Rotate(0.0f,180.0f,0.0f);
+    } 
+    public void checkIfShouldFlip(int x){
+        if(x!=0&&x!=facingDirection){
+            this.flip();
+        }
+    }
 }
