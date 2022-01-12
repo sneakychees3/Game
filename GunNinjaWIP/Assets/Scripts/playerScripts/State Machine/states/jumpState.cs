@@ -11,6 +11,7 @@ public class jumpState : playerBase
 
     public override void Enter()
     {
+        animBoolName="jump";
         base.Enter();
         applyJump();
     }

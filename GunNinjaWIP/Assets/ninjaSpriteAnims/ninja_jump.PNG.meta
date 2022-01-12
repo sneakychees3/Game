@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 71400d11dd052ae44a8644b850dfed37
+guid: 607d4a9bd6aa2aa43bffa4425a7a47dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4434044882434314277
-    second: ninja_run_0
+      213: -4912322752059367663
+    second: ninja_jump_0
   - first:
-      213: -1309635729335101550
-    second: ninja_run_1
+      213: 3205536189724551065
+    second: ninja_jump_1
   - first:
-      213: -3869306911004080856
-    second: ninja_run_2
+      213: -2632829535550350895
+    second: ninja_jump_2
   - first:
-      213: 6784992241257702460
-    second: ninja_run_3
+      213: 5447494016604556562
+    second: ninja_jump_3
   - first:
-      213: 5519354858981038949
-    second: ninja_run_4
+      213: -83932582190245479
+    second: ninja_jump_4
   - first:
-      213: 7394074273267522598
-    second: ninja_run_5
-  - first:
-      213: -3477914255705330801
-    second: ninja_run_6
-  - first:
-      213: -5195629452131705159
-    second: ninja_run_7
+      213: 6896575457846112773
+    second: ninja_jump_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 170
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninja_run_0
+      name: ninja_jump_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 128
-        height: 128
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 520d2a7f354e88d30800000000000000
-      internalID: 4434044882434314277
+      spriteID: 11f9e6dcb7ce3dbb0800000000000000
+      internalID: -4912322752059367663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_run_1
+      name: ninja_jump_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,62 +156,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29752df2e3d33dde0800000000000000
-      internalID: -1309635729335101550
+      spriteID: 997e03f4e2a5c7c20800000000000000
+      internalID: 3205536189724551065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_run_2
+      name: ninja_jump_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 9
+      pivot: {x: 0.50678897, y: 0.49999988}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82543aa6dd57d4ac0800000000000000
-      internalID: -3869306911004080856
+      spriteID: 1d95d5b9c7f467bd0800000000000000
+      internalID: -2632829535550350895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_run_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3462f7be72292e50800000000000000
-      internalID: 6784992241257702460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_run_4
+      name: ninja_jump_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b14ee5000b89c40800000000000000
-      internalID: 5519354858981038949
+      spriteID: 21dc7cf22f2699b40800000000000000
+      internalID: 5447494016604556562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_run_5
+      name: ninja_jump_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 512
         y: 0
-        width: 128
-        height: 128
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c17f440670d9660800000000000000
-      internalID: 7394074273267522598
+      spriteID: 999187dd2cfc5def0800000000000000
+      internalID: -83932582190245479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_run_6
+      name: ninja_jump_5
       rect:
         serializedVersion: 2
-        x: 256
+        x: 1024
         y: 0
-        width: 128
-        height: 128
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,29 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8baa654967fbbfc0800000000000000
-      internalID: -3477914255705330801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_run_7
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bed1297a8a65e7b0800000000000000
-      internalID: -5195629452131705159
+      spriteID: 502389bd6de85bf50800000000000000
+      internalID: 6896575457846112773
       vertices: []
       indices: 
       edges: []
