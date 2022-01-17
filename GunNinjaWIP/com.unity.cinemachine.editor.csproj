@@ -86,10 +86,10 @@
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\PropertyDrawers\OrbitalTransposerHeadingPropertyDrawer.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Impulse\CinemachineImpulseListenerEditor.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\Cinemachine3rdPersonFollowEditor.cs" />
-     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\CinemachineSameAsFollowTargetEditor.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\PostProcessing\CinemachinePostProcessingEditor.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\PropertyDrawers\AxisStatePropertyDrawer.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\PostProcessing\CinemachineVolumeSettingsEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\CinemachineSameAsFollowTargetEditor.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\CinemachineBlendListCameraEditor.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Utility\SaveDuringPlay.cs" />
      <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\CinemachineBasicMultiChannelPerlinEditor.cs" />

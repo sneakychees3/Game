@@ -36,19 +36,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\playerScripts\playerAfterImageSprite.cs" />
-     <Compile Include="Assets\Scripts\playerScripts\State Machine\states\idleState.cs" />
      <Compile Include="Assets\Scripts\playerScripts\State Machine\Collisions.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\State Machine\playerData.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\State Machine\player.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\State Machine\states\idleState.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\playerAfterImagePool.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\State Machine\states\dashState.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\State Machine\states\moveState.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\State Machine\inputHandler.cs" />
      <Compile Include="Assets\Scripts\playerScripts\State Machine\states\jumpState.cs" />
      <Compile Include="Assets\Scripts\playerScripts\State Machine\states\fallState.cs" />
-     <Compile Include="Assets\Scripts\playerScripts\State Machine\playerData.cs" />
-     <Compile Include="Assets\Scripts\playerScripts\State Machine\states\moveState.cs" />
-     <Compile Include="Assets\Scripts\playerScripts\State Machine\player.cs" />
-     <Compile Include="Assets\Scripts\playerScripts\State Machine\states\dashState.cs" />
      <Compile Include="Assets\Scripts\playerScripts\State Machine\stateMachine.cs" />
      <Compile Include="Assets\Scripts\playerScripts\State Machine\states\playerBase.cs" />
-     <Compile Include="Assets\Scripts\playerScripts\playerAfterImagePool.cs" />
-     <Compile Include="Assets\Scripts\playerScripts\State Machine\inputHandler.cs" />
+     <Compile Include="Assets\Scripts\playerScripts\playerAfterImageSprite.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -705,14 +705,6 @@
       <Project>{ce94676f-a7cc-a11a-dd91-28ecc526cbac}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{9abe4869-aa61-b864-f6e4-8cafeadd6e0e}</Project>
-      <Name>Cinemachine</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{8c868606-b2c6-3ce3-e1d0-75e650f54f98}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
       <Project>{143d4a96-ef60-867e-3be2-baf6ac0428da}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime</Name>
@@ -748,6 +740,14 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{78d6e422-b975-75ec-1dad-8f8fdad3b614}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{8c868606-b2c6-3ce3-e1d0-75e650f54f98}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{9abe4869-aa61-b864-f6e4-8cafeadd6e0e}</Project>
+      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
